@@ -17,7 +17,7 @@ public class Main {
 
             tester.testFile();
 
-        RationalCalculator calculator = new RationalCalculator(
+        RationalCalc calculator = new RationalCalc(
                 (x, y) -> new Number(x.getA() + y.getA(), x.getB() + y.getB()),
                 (x, y) -> new Number(x.getA() - y.getA(), x.getB() - y.getB()),
                 (x, y) -> new Number(x.getA() * y.getA(), x.getB() * y.getB()),

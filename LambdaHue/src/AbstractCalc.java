@@ -1,11 +1,10 @@
-public class AbstractCalc {
+public abstract class AbstractCalc {
     protected CalcOperation add;
     protected CalcOperation subtract;
     protected CalcOperation multiply;
     protected CalcOperation divide;
 
-    public AbstractCalc(CalcOperation add, CalcOperation subtract,
-                        CalcOperation multiply, CalcOperation divide) {
+    public AbstractCalc(CalcOperation add, CalcOperation subtract, CalcOperation multiply, CalcOperation divide) {
         this.add = add;
         this.subtract = subtract;
         this.multiply = multiply;

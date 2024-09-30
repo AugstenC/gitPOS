@@ -27,7 +27,8 @@ public class NumberTester {
 
     public void testFile() {
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
-            int numberOfTests = Integer.parseInt(br.readLine());
+            String  s = br.readLine().trim();
+            int numberOfTests = Integer.parseInt(s);
 
             for (int i = 0; i < numberOfTests; i++) {
                 String[] line = br.readLine().split(" ");
