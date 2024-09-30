@@ -1,16 +1,16 @@
-import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class HalloJavamitForEach {
+    public static void main(String[] args) {
+        List<String> liste = Arrays.asList("Hallo", "Java", "mit", "ForEach");
 
-    ArrayList<String> list = new ArrayList<String>();
-
-
-    public void printList() {
-        for (String s : list) {
+        for (String s : liste) {
             System.out.println(s);
         }
 
-        list.forEach(System.out::println);
-    }
+        liste.forEach(s -> System.out.println(s));
 
+        liste.forEach(System.out::println);
+    }
 }
